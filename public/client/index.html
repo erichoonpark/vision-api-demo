@@ -1,0 +1,42 @@
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/html"  href="index.css">
+<script type='text/javascript' src="https://drive.google.com/open?id=1MkCMB8dy9ZVWUie1c9koxliHGAnZksyE"></script>
+<!-- Include the above in your HEAD tag ---------->
+
+<div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading"><strong>Readr</strong> <small>See what it's all about</small></div>
+        <div class="panel-body">
+
+          <!-- Standar Form -->
+          <h4>Select files from your computer</h4>
+          <form method='post' action='/upload' enctype='multipart/form-data' id="js-upload-form">
+            <div class="form-inline">
+              <div class="form-group">
+                <input type='file' name='image' id="js-upload-files" multiple>
+              </div>
+              <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
+            </div>
+          </form>
+
+          <!-- Drop Zone -->
+          <h4>Or drag and drop files below</h4>
+          <div class="upload-drop-zone" id="drop-zone">
+            Just drag and drop files here
+          </div>
+
+          <!-- Upload Finished -->
+          <!--
+          <div class="js-upload-finished">
+            <h3>Processed files</h3>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>image-01.jpg</a>
+              <a href="#" class="list-group-item list-group-item-success"><span class="badge alert-success pull-right">Success</span>image-02.jpg</a>
+            </div>
+          </div>
+          -->
+        </div>
+      </div>
+    </div> <!-- /container -->
